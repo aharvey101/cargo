@@ -57,7 +57,7 @@ pub fn version() -> VersionInfo {
             option_env!($name).map(|s| s.to_string())
         };
     }
-
+    println!("Some Chnage")
     // This is the version set in bootstrap, which we use to match rustc.
     let version = option_env_str!("CFG_RELEASE").unwrap_or_else(|| {
         // If cargo is not being built by bootstrap, then we just use the
